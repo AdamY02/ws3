@@ -1,0 +1,7 @@
+      1439 verified.txt
+   3104082 unverified.txt
+   3105521 total
+   
+   The first number 1439 is how many lines in the verfied.txt file
+   The second number 3104082 is how many lines in the unverified.txt file
+   3105521 total means the total lines in two files.

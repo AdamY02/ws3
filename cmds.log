@@ -1,0 +1,97 @@
+    1  passwd
+    2  exit
+    3  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    4  sudo dnf install git-all
+    5  sudo apt install git-all
+    6  git --version
+    7  exit
+    8  pwd
+    9  git - version
+   10  git -version
+   11  git --version
+   12  ls
+   13  git init
+   14  ls
+   15  touch newfile.txt
+   16  ls
+   17  git status
+   18  git add newfile.txt 
+   19  git status
+   20  git commit -m "first commit"
+   21  git remote add origin https://github.com/AdamY02/worksheet1.git
+   22  push -u origin master
+   23  git push -u origin master
+   24  git commit -m "first commit"
+   25  git config user.email "jiajie.yin01@sjsu.edu"
+   26  git config user.name "Your name"
+   27  git commit -m "first time commit"
+   28  git push -u origin master
+   29  git status
+   30  git push -u origin master
+   31  git push origin my-new-branch
+   32  git pull -v
+   33  git pull
+   34  history > cmds.log
+   35  ls
+   36  git add cmds.log 
+   37  git commit -m "second commit"
+   38  git push -u origin master
+   39  git clone https://github.com/AdamY02/worksheet1.git
+   40  ls
+   41  worksheet1/
+   42  ls
+   43  cd worksheet1/
+   44  ls
+   45  cd ..
+   46  rm worksheet1/
+   47  rmdir worksheet1/
+   48  worksheet1/
+   49  cd worksheet1/
+   50  ls
+   51  rm cmds.log 
+   52  rm newfile.txt 
+   53  cd ..
+   54  rmdir worksheet1/
+   55  cd worksheet1/
+   56  ls
+   57  cd ..
+   58  ls worksheet1
+   59  ls
+   60  rm worksheet1
+   61  rmdir worksheet1/
+   62  rm -rf worksheet1/
+   63  ls
+   64  exit
+   65  ls
+   66  mkdir amazonReview
+   67  ls
+   68  mv amazon_reviews_us_Books_v1_02.tsv.gz amazonReview/
+   69  ls
+   70  cd amazonReview/
+   71  ls
+   72  gzip -d amazon_reviews_us_Books_v1_02.tsv.gz 
+   73  ls
+   74  cd amazon_reviews_us_Books_vi_02.tsv
+   75  gzip amazon_reviews_us_Books_v1_02.tsv 
+   76  ls
+   77  gzip -d amazon_reviews_us_Books_v1_02.tsv.gz 
+   78  ls
+   79  cat amazon_reviews_us_Books_v1_02.tsv 
+   80  history
+   81  grep -c "verified" amazon_reviews_us_Books_v1_02.tsv 
+   82  grep "verified" amazon_reviews_us_Books_v1_02.tsv  >> verified.txt
+   83  ls
+   84  verified.txt
+   85  vi verified.txt
+   86  exit
+   87  ls
+   88  cd amazonReview/
+   89  ls
+   90  grep -v "verified" amazon_reviews_us_Books_v1_02.tsv >> unverified.txt
+   91  ls
+   92  wc -l verified.txt unverified.txt 
+   93  wc -l verified.txt unverified.txt >> counts.txt
+   94  ls
+   95  vi counts.txt
+   96  ls
+   97  history >> cmds.log
