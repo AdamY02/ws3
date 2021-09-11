@@ -95,3 +95,194 @@
    95  vi counts.txt
    96  ls
    97  history >> cmds.log
+   98  vi cmds.log
+   99  init git
+  100  git init
+  101  git status
+  102  git add cmds.log
+  103  git add counts.txt
+  104  git status
+  105  git commit -m "ws2.1"
+  106  git config --global user.email "jiajie.yin01@sjsu.edu"
+  107  git config --global user.name "Adam"
+  108  git commit -m "ws2.1"
+  109  history
+  110  git remote add origin https://github.com/AdamY02/ws2
+  111  git push -u origin master
+  112  exit
+  113  ls
+  114  echo abcdsfds
+  115  I have no idea
+  116  echo $Home
+  117  echo a
+  118  echo $HOME
+  119  pwd
+  120  echo ~
+  121  id -u yin
+  122  echo $UID
+  123  ls
+  124  pwd
+  125  cd amazonReview/
+  126  pwd
+  127  cd ..
+  128  cd amazonReview/
+  129  echo $HOME
+  130  cd ..
+  131  ls
+  132  script a1.txt
+  133  less a1.txt
+  134  less /etc/group
+  135  $USER
+  136  $ users
+  137  echo $users
+  138  less /etc/group
+  139  groups
+  140  cd ..
+  141  groups
+  142  id -g
+  143  id -G
+  144  groups
+  145  users yin
+  146  less /etc/group
+  147  id -g user
+  148  id -g yin
+  149  id -G user
+  150  id -G yin
+  151  groups yin
+  152  less /etc/group
+  153  more /etc/group
+  154  ls
+  155  cd yin
+  156  ls
+  157  more /etc/group
+  158  echo $UID
+  159  echo $GID
+  160  id -g yin
+  161  ls
+  162  rm a1.txt 
+  163  ls
+  164  script a1.txt
+  165  less a1.txt 
+  166  vi a1.txt
+  167  rm a1.txt 
+  168  ls
+  169  mkdir temp
+  170  ls
+  171  ls -l
+  172  chmod temp 666
+  173  chmod 666 temp/
+  174  ls -l
+  175  cd temp
+  176  cd temp/
+  177  chmod 777 temp/
+  178  ls -l
+  179  chmod 677 temp/
+  180  ls -l
+  181  cd temp/
+  182  exit
+  183  ls
+  184  cd amazonReview/
+  185  ls
+  186  less amazon_reviews_us_Books_v1_02.tsv 
+  187  cut amazon_reviews_us_Books_v1_02.tsv  -f 2,3 > try01.txt
+  188  ls
+  189  less try01.txt 
+  190  sort -n try01.txt
+  191  sort -n amazon_reviews_us_Books_v1_02.tsv > try02.txt
+  192  less try02.txt 
+  193  sort -n try01.txt > try02.txt
+  194  less try02.txt 
+  195  less amazon_reviews_us_Books_v1_02.tsv 
+  196  rm try01.txt
+  197  ls
+  198  rm try02.txt
+  199  ls
+  200  cut -f 2 amazon_reviews_us_Books_v1_02.tsv > try01.txt
+  201  less try01.txt 
+  202  uniq -c try01.txt > try02.txt
+  203  less try02.txt 
+  204  sort try02.txt >try03.txt
+  205  less try03.txt 
+  206  cut -f 2 amazon_reviews_us_Books_v1_02.tsv > try01.txt
+  207  less try01.txt 
+  208  sort -n try01.txt > try02.txt 
+  209  less try02.txt 
+  210  uniq -c try02.txt > try03.txt
+  211  less try03.txt
+  212  sort -n try03.txt > try04.txt
+  213  less try04.txt
+  214  sort -nr try04.txt > try04.txt
+  215  less try04.txt
+  216  sort -nr try03.txt >try04.txt
+  217  less try04.txt
+  218  sort -nr  uniq -c sort -n cut -f 2 amazon_reviews_us_Books_v1_02.tsv > try05.txt
+  219  sort -n cut -f 2 amazon_reviews_us_Books_v1_02.tsv > try05.txt
+  220  ls
+  221  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c | sort -nr > try05.txt
+  222  less try05.txt
+  223  less try04.txt
+  224  less try01.txt 
+  225  rm try01.txt try02.txt 
+  226  ls
+  227  rm try03.txt try04.txt try05.txt 
+  228  ls
+  229  less amazon_reviews_us_Books_v1_02.tsv 
+  230  cut -f 4 amazon_reviews_us_Books_v1_02.tsv > try01.txt
+  231  less try01.txt 
+  232  sort try01.txt > try02.txt
+  233  uniq -c try02.txt > try03.txt
+  234  sort -nr try03.txt > try04.txt
+  235  less try04.txt 
+  236  rm try01.txt try02.txt try03.txt try04.txt 
+  237  ls
+  238  less amazon_reviews_us_Books_v1_02.tsv 
+  239  cut -f 9 amazon_reviews_us_Books_v1_02.tsv  > try01.txt
+  240  less try01.txt 
+  241  less amazon_reviews_us_Books_v1_02.tsv 
+  242  sort -n try01.txt > try02.txt
+  243  uniq -c try02.txt > try03.txt
+  244  sort -nr try03.txt > try04.txt
+  245  less try04.txt 
+  246  rm try01.txt try02.txt try03.txt try04.txt 
+  247  ls
+  248  script ws3.txt
+  249  less amazon_reviews_us_Books_v1_02.tsv 
+  250  head customerMostReview.txt 
+  251  less ws3.txt 
+  252  rm ws3.txt 
+  253  rm customerMostReview.txt 
+  254  ls
+  255  script ws3.txt
+  256  less ws3.txt 
+  257  vi ws3.txt
+  258  rm ws3.txt
+  259  ls
+  260  rm helfulness.txt mostReviewedProduct.txt customerMostReview.txt 
+  261  ls
+  262  script ws3.txt
+  263  less ws3.txt 
+  264  rm ws3.txt 
+  265  rm mostReviewedItem.txt 
+  266  rm helpfulness.txt 
+  267  rm customerMostReviewed.txt 
+  268  ls
+  269  script ws3.txt
+  270  cut -f 9 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c | sort -nr > helpfulness.txt 
+  271  less helpfulness.txt 
+  272  less ws3.txt 
+  273  vi ws3.txt 
+  274  ls
+  275  rm customerMostReviewed.txt helpfulness.txt mostReviewedProduct.txt 
+  276  ls
+  277  rm ws3.txt 
+  278  ls
+  279  script ws3.txt
+  280  rm ws3.txt 
+  281  ls
+  282  script ws3.txt
+  283  less ws3.txt 
+  284  rm ws3.txt 
+  285  ls
+  286  script ws3.txt
+  287  less ws3.txt 
+  288  history > cmds.log

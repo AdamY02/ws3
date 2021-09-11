@@ -1,0 +1,32 @@
+Script started on 2021-09-08 23:56:17+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="189" LINES="50"]
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ echo "find the top 3 reviewe[K[K[K[K[K[K[K[K[K[K[K[K[Kmost authored top 3 reviewer"
+find the most authored top 3 reviewer
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c | sort -nr |[K>> [K[K[K[K > mostAuthoredReviewer.txt
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ head -n 3 mostAuthoredReviewer.txt 
+  21922 50122160
+   9964 50732546
+   2664 52615377
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ echo "find the top 3 most reviewed r[Kprodcuts"
+find the top 3 most reviewed prodcuts
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ cut -f 4,6 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c | sort -nr > mostReviewedProduct.txt
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ head -n 3 mostReviewedProduct.txt 
+   4625 043935806X	Harry Potter and the Order of the Phoenix (Book 5)
+   3739 0439139597	Harry Potter And The Goblet Of Fire (Book 4)
+   2666 0525947647	Lies and the Lying Liars Who Tell Them
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ echo "helpfulness vale[Kues"
+helpfulness values
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ cut -f 9 amazon_reviews_us_Books_v1_02.tsv  [K| sort -n | uniq -c | sort -nr > helpfulness.txt
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ head -10[K[Kn 10 helpfulness.txt 
+ 459924 0
+ 408857 1
+ 333718 2
+ 269068 3
+ 215443 4
+ 176301 5
+ 144403 6
+ 120319 7
+ 101095 8
+  85924 9
+]0;yin@f6lanuxA3: ~/amazonReviewyin@f6lanuxA3:~/amazonReview$ exit
+
+Script done on 2021-09-09 00:04:20+00:00 [COMMAND_EXIT_CODE="0"]
